@@ -18,7 +18,7 @@ const projects: Project[] = [
     {
         title: 'gaidme',
         url: 'https://gaidme.app',
-        description: 'reach your personal goals with a little help from ai',
+        description: 'cli tool powered by ai to generate your terminal commands',
         status: 'failing',
         stack: ['nextjs', 'js', 'supabase', 'railway', 'tailwind', 'langchain', 'openai']
     },
@@ -27,79 +27,117 @@ const projects: Project[] = [
 
 export default function Home() {
     return (
-        <main className="max-w-2xl mx-auto px-4 py-16">
-            <section className="mb-16">
-                <h1 className="text-4xl font-bold mb-2">hi, i'm mateusz 👋🏼</h1>
-                <p className="text-gray-600 dark:text-gray-400">
-                    devops, indie hacker, builder
+        <main className="max-w-2xl mx-auto px-6 py-24">
+            <section className="mb-20">
+                <h1 className="text-3xl font-normal mb-3">hi, i'm mateusz 👋🏼</h1>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    devops • indie hacker • builder
                 </p>
 
-                <div className="flex gap-4 mt-4">
+                <div className="flex gap-6 mt-6">
                     <Link
                         href="https://twitter.com/mateusztylec"
-                        className="text-gray-600 hover:text-blue-400 transition-colors"
+                        className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <i className="bi bi-twitter-x text-2xl"></i>
+                        <i className="bi bi-twitter-x text-lg"></i>
                     </Link>
 
                     <Link
                         href="https://github.com/mateusztylec"
-                        className="text-gray-600 hover:text-gray-900 dark:hover:text-white transition-colors"
+                        className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <i className="bi bi-github text-2xl"></i>
+                        <i className="bi bi-github text-lg"></i>
                     </Link>
 
                     <Link
                         href="https://linkedin.com/in/mateusztylec"
-                        className="text-gray-600 hover:text-blue-700 transition-colors"
+                        className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <i className="bi bi-linkedin text-2xl"></i>
+                        <i className="bi bi-linkedin text-lg"></i>
                     </Link>
                 </div>
             </section>
 
             <section>
-                <h2 className="text-2xl font-bold mb-8">my stuff</h2>
-                <div className="space-y-6">
+                <h2 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-8 uppercase tracking-wider">my stuff</h2>
+                <div className="space-y-8">
                     {projects.map((project) => (
-                        <div key={project.title} className="border rounded-lg p-6">
-                            <div className="flex justify-between items-start mb-2">
-                                {project.url ? (
-                                    <Link 
-                                        href={project.url}
-                                        className="text-xl font-semibold hover:text-blue-600 transition-colors"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        {project.title}
-                                    </Link>
-                                ) : (
-                                    <h3 className="text-xl font-semibold">{project.title}</h3>
-                                )}
-                                <span className={`px-3 py-1 rounded-full text-sm ${project.status === 'acquired' ? 'bg-green-100 text-green-800' :
-                                        project.status === 'failed' ? 'bg-red-200 text-red-800' :
-                                            project.status === 'failing' ? 'bg-red-100 text-red-800' :
-                                                project.status === 'building' ? 'bg-yellow-100 text-yellow-800' :
-                                                    'bg-gray-100 text-gray-800'
+                        project.url ? (
+                            <Link
+                                key={project.title}
+                                href={project.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block group"
+                            >
+                                <div className="border border-gray-100 dark:border-gray-800 rounded-lg p-6 hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
+                                    <div className="flex justify-between items-start mb-2">
+                                        <h3 className="text-lg font-normal group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                                            {project.title}
+                                        </h3>
+                                        <span className={`text-xs px-2.5 py-1 rounded-full ${
+                                            {
+                                                'acquired': 'bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400',
+                                                'failed': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
+                                                'failing': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
+                                                'building': 'bg-yellow-50 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400',
+                                                'quit': 'bg-gray-50 text-gray-600 dark:bg-gray-900/30 dark:text-gray-400'
+                                            }[project.status]
+                                        }`}>
+                                            {project.status}
+                                        </span>
+                                    </div>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{project.description}</p>
+                                    <div className="flex flex-wrap gap-3">
+                                        {project.stack.map((tech) => (
+                                            <span 
+                                                key={tech} 
+                                                className="text-xs text-gray-400 dark:text-gray-500"
+                                            >
+                                                {tech}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </Link>
+                        ) : (
+                            <div 
+                                key={project.title} 
+                                className="border border-gray-100 dark:border-gray-800 rounded-lg p-6"
+                            >
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-lg font-normal">{project.title}</h3>
+                                    <span className={`text-xs px-2.5 py-1 rounded-full ${
+                                        {
+                                            'acquired': 'bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400',
+                                            'failed': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
+                                            'failing': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
+                                            'building': 'bg-yellow-50 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400',
+                                            'quit': 'bg-gray-50 text-gray-600 dark:bg-gray-900/30 dark:text-gray-400'
+                                        }[project.status]
                                     }`}>
-                                    {project.status}
-                                </span>
-                            </div>
-                            <p className="text-gray-600 dark:text-gray-400 mb-4">{project.description}</p>
-                            <div className="flex flex-wrap gap-2">
-                                {project.stack.map((tech) => (
-                                    <span key={tech} className="px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded text-sm">
-                                        {tech}
+                                        {project.status}
                                     </span>
-                                ))}
+                                </div>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{project.description}</p>
+                                <div className="flex flex-wrap gap-3">
+                                    {project.stack.map((tech) => (
+                                        <span 
+                                            key={tech} 
+                                            className="text-xs text-gray-400 dark:text-gray-500"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
+                        )
                     ))}
                 </div>
             </section>
