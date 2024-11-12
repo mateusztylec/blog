@@ -17,7 +17,7 @@ const projects: Project[] = [
     },
     {
         title: 'gaidme',
-        url: 'https://gaidme.app',
+        url: 'https://gaidme.app/?ref=mateusztylec.com',
         description: 'cli tool powered by ai to generate your terminal commands',
         status: 'failing',
         stack: ['nextjs', 'js', 'supabase', 'railway', 'tailwind', 'langchain', 'openai']
