@@ -19,7 +19,7 @@ const projects: Project[] = [
         title: 'gaidme',
         url: 'https://gaidme.app/?ref=mateusztylec.com',
         description: 'cli tool powered by ai to generate your terminal commands',
-        status: 'failing',
+        status: 'failed',
         stack: ['nextjs', 'js', 'supabase', 'railway', 'tailwind', 'langchain', 'openai']
     },
     // Add other projects similarly...
