@@ -10,8 +10,9 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: 'secretary-ai',
-        description: '(more details soon)',
+        title: 'voicedesk.app',
+        url: 'https://voicedesk.app/?ref=mateusztylec.com',
+        description: 'your private ai phone secretary',
         status: 'building',
         stack: ['nextjs', 'ts', 'supabase', 'railway', 'twilio', 'livekit', 'langgraph']
     },
@@ -77,6 +78,7 @@ export default function Home() {
                         className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-plausible-event="twitter_click"
                     >
                         <i className="bi bi-twitter-x text-lg"></i>
                     </Link>
@@ -86,6 +88,7 @@ export default function Home() {
                         className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-plausible-event="github_click"
                     >
                         <i className="bi bi-github text-lg"></i>
                     </Link>
@@ -95,6 +98,7 @@ export default function Home() {
                         className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-plausible-event="linkedin_click"
                     >
                         <i className="bi bi-linkedin text-lg"></i>
                     </Link>
