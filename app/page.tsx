@@ -11,7 +11,6 @@ interface Project {
 const projects: Project[] = [
     {
         title: 'personal agi',
-        url: '',
         description: 'my personal ai agent (feels like agi)',
         status: 'building',
         stack: ['langgraph', 'ts', 'supabase', 'coolify', 'llm']
