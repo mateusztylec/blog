@@ -10,6 +10,13 @@ interface Project {
 
 const projects: Project[] = [
     {
+        title: 'heyaiworld',
+        url: 'https://heyaiworld.mateusztylec.com/?ref=mateusztylec.com',
+        description: 'directory of great ai-powered apps and more',
+        status: 'building',
+        stack: ['nextjs', 'ts', 'supabase', 'coolify', 'openai']
+    },
+    {
         title: 'personal agi',
         description: 'my personal ai agent (feels like agi)',
         status: 'building',
@@ -19,7 +26,7 @@ const projects: Project[] = [
         title: 'voicedesk.app',
         url: 'https://voicedesk.app/?ref=mateusztylec.com',
         description: 'your private ai phone secretary',
-        status: 'building',
+        status: 'failing',
         stack: ['nextjs', 'ts', 'supabase', 'railway', 'twilio', 'livekit', 'langgraph']
     },
     {
@@ -75,7 +82,7 @@ export default function Home() {
             <section className="mb-20">
                 <h1 className="text-3xl font-normal mb-3">hi, i'm mateusz 👋🏼</h1>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    devops • indie hacker • builder
+                    devops • indie hacker • builder • sh*tshipper
                 </p>
 
                 <div className="flex gap-6 mt-6">
