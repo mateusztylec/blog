@@ -4,7 +4,7 @@ interface Project {
     title: string
     url?: string
     description: string
-    status: 'acquired' | 'failed' | 'quit' | 'failing' | 'building'
+    status: 'acquired' | 'failed' | 'quit' | 'failing' | 'building' | 'live'
     stack: string[]
 }
 
@@ -13,7 +13,7 @@ const projects: Project[] = [
         title: 'heyaiworld',
         url: 'https://heyaiworld.mateusztylec.com/?ref=mateusztylec.com',
         description: 'directory of great ai-powered apps and more',
-        status: 'building',
+        status: 'live',
         stack: ['nextjs', 'ts', 'supabase', 'coolify', 'openai']
     },
     {
@@ -26,7 +26,7 @@ const projects: Project[] = [
         title: 'voicedesk.app',
         url: 'https://voicedesk.app/?ref=mateusztylec.com',
         description: 'your private ai phone secretary',
-        status: 'failing',
+        status: 'failed',
         stack: ['nextjs', 'ts', 'supabase', 'railway', 'twilio', 'livekit', 'langgraph']
     },
     {
@@ -53,7 +53,8 @@ const StatusBadge = ({ status }: { status: Project['status'] }) => {
         'failed': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
         'failing': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
         'building': 'bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-100 dark:from-yellow-900/40 dark:via-yellow-700/40 dark:to-yellow-900/40 text-yellow-700 dark:text-yellow-300 animate-status-shimmer bg-[length:200%_100%] animate-status-glow',
-        'quit': 'bg-gray-50 text-gray-600 dark:bg-gray-900/30 dark:text-gray-400'
+        'quit': 'bg-gray-50 text-gray-600 dark:bg-gray-900/30 dark:text-gray-400',
+        'live': 'bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400'
     }[status]
 
     return (
