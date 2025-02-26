@@ -11,7 +11,7 @@ interface Project {
 const projects: Project[] = [
     {
         title: 'heyaiworld',
-        url: 'https://heyaiworld.mateusztylec.com/?ref=mateusztylec.com',
+        url: 'https://heyaiworld.com/?ref=mateusztylec.com',
         description: 'directory of great ai-powered apps and more',
         status: 'live',
         stack: ['nextjs', 'ts', 'supabase', 'coolify', 'openai']
