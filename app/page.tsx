@@ -17,10 +17,10 @@ const projects: Project[] = [
         stack: ['nextjs', 'ts', 'supabase', 'coolify', 'openai']
     },
     {
-        title: 'personal agi',
-        description: 'my personal ai agent (feels like agi)',
+        title: 'rhea.chat',
+        description: 'chatbot with flowless access to many tools',
         status: 'building',
-        stack: ['langgraph', 'ts', 'supabase', 'coolify', 'llm']
+        stack: ['langgraph', 'ts', 'supabase', 'railway', 'llm', 'nextjs']
     },
     {
         title: 'voicedesk.app',
