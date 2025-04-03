@@ -19,6 +19,7 @@ const projects: Project[] = [
     {
         title: 'rhea.chat',
         description: 'chatbot with flowless access to many tools',
+        url: 'https://rhea.chat/?ref=mateusztylec.com',
         status: 'building',
         stack: ['langgraph', 'ts', 'supabase', 'railway', 'llm', 'nextjs']
     },
