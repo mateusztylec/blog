@@ -10,6 +10,13 @@ interface Project {
 
 const projects: Project[] = [
     {
+        title: 'fitresume.app',
+        url: 'https://fitresume.app/?ref=mateusztylec.com',
+        description: 'here your resume fits the role',
+        status: 'live',
+        stack: ['nextjs', 'ts', 'supabase', 'railway', 'openai']
+    },
+    {
         title: 'heyaiworld',
         url: 'https://heyaiworld.com/?ref=mateusztylec.com',
         description: 'directory of great ai-powered apps and more',
