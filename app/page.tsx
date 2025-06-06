@@ -4,7 +4,7 @@ interface Project {
     title: string
     url?: string
     description: string
-    status: 'acquired' | 'failed' | 'quit' | 'failing' | 'building' | 'live'
+    status: 'waitlist' | 'failed' | 'failing' | 'building' | 'live'
     stack: string[]
 }
 
@@ -27,7 +27,7 @@ const projects: Project[] = [
         title: 'rhea.chat',
         description: 'chatbot with flowless access to many tools',
         url: 'https://rhea.chat/?ref=mateusztylec.com',
-        status: 'live',
+        status: 'waitlist',
         stack: ['langgraph', 'ts', 'supabase', 'railway', 'llm', 'nextjs']
     },
     {
@@ -57,11 +57,10 @@ const getProjectTooltip = (status: Project['status']) => {
 const StatusBadge = ({ status }: { status: Project['status'] }) => {
     const baseClasses = "text-xs px-2.5 py-1 rounded-full relative"
     const statusClasses = {
-        'acquired': 'bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400',
+        'waitlist': 'bg-yellow-50 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400',
         'failed': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
         'failing': 'bg-red-50 text-red-600 dark:bg-red-900/30 dark:text-red-400',
         'building': 'bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-100 dark:from-yellow-900/40 dark:via-yellow-700/40 dark:to-yellow-900/40 text-yellow-700 dark:text-yellow-300 animate-status-shimmer bg-[length:200%_100%] animate-status-glow',
-        'quit': 'bg-gray-50 text-gray-600 dark:bg-gray-900/30 dark:text-gray-400',
         'live': 'bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400'
     }[status]
 
