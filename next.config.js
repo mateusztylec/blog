@@ -4,9 +4,9 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    turbopack: {
-        // Keep workspace root at repo root so builds in subdirs (e.g. src/app) resolve Next
-        root: __dirname,
+    // Disable turbopack for Cloudflare - it's not fully supported yet
+    experimental: {
+        turbo: false,
     },
 }
 
