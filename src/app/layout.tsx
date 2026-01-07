@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { getSEOTags } from "@/lib/seo";
 
 
 const geistSans = localFont({
@@ -15,10 +16,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: 'mateusztylec',
-  description: 'Personal portfolio website',
-}
+export const metadata = getSEOTags({
+  title: "Mateusz Portfolio",
+  description: "Personal portfolio website of Mateusz Tylec.",
+  canonicalUrlRelative: "/",
+});
 
 export default function RootLayout({
   children,
