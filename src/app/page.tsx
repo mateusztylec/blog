@@ -20,7 +20,7 @@ const projects: Project[] = [
         title: 'heyaiworld',
         url: 'https://heyaiworld.com/?ref=mateusztylec.com',
         description: 'directory of great ai-powered apps and more',
-        status: 'live',
+        status: 'failed',
         stack: ['nextjs', 'ts', 'supabase', 'coolify', 'openai']
     },
     {
