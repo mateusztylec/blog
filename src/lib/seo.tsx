@@ -44,7 +44,7 @@ export const getSEOTags = ({
         {
           url: `${metadataBase.origin}/images/mateusztylec-og.png`,
           width: 1200,
-          height: 650,
+          height: 630,
         },
       ],
       locale: "en_US",
@@ -55,7 +55,7 @@ export const getSEOTags = ({
       title: openGraph?.title || config.appName,
       description: openGraph?.description || config.appDescription,
       // If you add an twitter-image.(jpg|jpeg|png|gif) image to the /app folder, you don't need the code below
-      images: [`${metadataBase.origin}/images/mateusztylec-of.png`],
+      images: [`${metadataBase.origin}/images/mateusztylec-og.png`],
       card: "summary_large_image",
       site: "@mateusztylec", // brand handle (or same as creator). add this if exists
       creator: "@mateusztylec",
