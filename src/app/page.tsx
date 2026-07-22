@@ -10,15 +10,20 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: 'fitresume.app',
-        url: 'https://fitresume.app/?ref=mateusztylec.com',
-        description: 'here your resume fits the role',
+        title: 'omnipaper',
+        url: 'https://omnipaper.app',
+        description: 'self-hosted ai document management with ocr and workflows',
         status: 'live',
+        stack: ['hono', 'ts', 'tanstack', 'postgres', 'ai']
+    },
+    {
+        title: 'fitresume.app',
+        description: 'here your resume fits the role',
+        status: 'failed',
         stack: ['nextjs', 'ts', 'supabase', 'railway', 'openai']
     },
     {
         title: 'heyaiworld',
-        url: 'https://heyaiworld.com/?ref=mateusztylec.com',
         description: 'directory of great ai-powered apps and more',
         status: 'failed',
         stack: ['nextjs', 'ts', 'supabase', 'coolify', 'openai']
@@ -26,20 +31,17 @@ const projects: Project[] = [
     {
         title: 'rhea.chat',
         description: 'chatbot with flowless access to many tools',
-        url: 'https://rhea.chat/?ref=mateusztylec.com',
         status: 'failed',
         stack: ['langgraph', 'ts', 'supabase', 'railway', 'llm', 'nextjs']
     },
     {
         title: 'voicedesk.app',
-        url: 'https://voicedesk.app/?ref=mateusztylec.com',
         description: 'your private ai phone secretary',
         status: 'failed',
         stack: ['nextjs', 'ts', 'supabase', 'railway', 'twilio', 'livekit', 'langgraph']
     },
     {
         title: 'gaidme.app',
-        url: 'https://gaidme.app/?ref=mateusztylec.com',
         description: 'cli tool powered by ai to generate your terminal commands',
         status: 'failed',
         stack: ['nextjs', 'js', 'supabase', 'railway', 'tailwind', 'langchain', 'openai']
