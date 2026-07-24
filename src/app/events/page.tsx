@@ -28,7 +28,19 @@ const events: Event[] = [
 export default function Events() {
     return (
         <main>
-            <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-8 uppercase tracking-wider">events i organize</h1>
+            <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-3 uppercase tracking-wider">events i organize</h1>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">
+                all my events live on{' '}
+                <Link
+                    href="https://luma.com/user/mateusztylec"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+                    data-plausible-event="luma_click"
+                >
+                    luma
+                </Link>
+            </p>
             <div className="space-y-8">
                 {events.map((event) => (
                     <div key={event.title} className="border border-gray-100 dark:border-gray-800 rounded-lg p-6 hover:border-gray-200 dark:hover:border-gray-700 transition-colors">
