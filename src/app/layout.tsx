@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { getSEOTags } from "@/lib/seo";
+import Sidebar from "@/components/Sidebar";
 
 
 const geistSans = localFont({
@@ -37,7 +38,10 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 md:flex md:gap-12">
+          <Sidebar />
+          <div className="flex-1 min-w-0">{children}</div>
+        </div>
       </body>
     </html>
   );
