@@ -88,7 +88,7 @@ export default function Home() {
                         <h2 className="text-base font-normal">events</h2>
                         <i className="bi bi-arrow-right text-gray-400 dark:text-gray-500 group-hover:translate-x-0.5 transition-transform"></i>
                     </div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">meetups i organize, like claude community kraków</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">meetups i organize</p>
                 </Link>
             </section>
         </main>
