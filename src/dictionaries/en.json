@@ -1,0 +1,37 @@
+{
+    "nav": {
+        "about": "about me",
+        "projects": "projects",
+        "events": "events"
+    },
+    "home": {
+        "greeting": "hi, i'm mateusz 👋🏼",
+        "tagline": "ai dev • indie hacker • builder • devops",
+        "bioProjects": {
+            "before": "i build ai-powered products and the infrastructure they run on. most of my time goes into shipping side projects. some live, most failed, all of them lessons. you can find them in ",
+            "link": "projects",
+            "after": "."
+        },
+        "bioEvents": {
+            "before": "outside of building, i organize local tech events. more in ",
+            "link": "events",
+            "after": "."
+        },
+        "cards": {
+            "projects": "stuff i've built and shipped",
+            "events": "meetups i organize"
+        }
+    },
+    "projects": {
+        "heading": "projects",
+        "metaTitle": "projects",
+        "metaDescription": "AI-powered products and side projects built by Mateusz Tylec."
+    },
+    "events": {
+        "heading": "events i organize",
+        "lumaBefore": "all my events live on ",
+        "lumaLink": "luma",
+        "metaTitle": "events",
+        "metaDescription": "Tech events organized by Mateusz Tylec, including Claude Community Kraków."
+    }
+}

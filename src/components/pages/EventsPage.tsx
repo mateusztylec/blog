@@ -1,36 +1,17 @@
 import Link from 'next/link'
-import { getSEOTags } from '@/lib/seo'
+import { Locale, getDictionary } from '@/lib/i18n'
+import { events } from '@/lib/events'
 
-export const metadata = getSEOTags({
-    title: 'events',
-    description: 'Tech events organized by Mateusz Tylec, including Claude Community Kraków.',
-    canonicalUrlRelative: '/events',
-})
+export default function EventsPage({ locale }: { locale: Locale }) {
+    const dict = getDictionary(locale)
 
-interface Event {
-    title: string
-    url: string
-    linkedin?: string
-    description: string
-    role: string
-}
-
-const events: Event[] = [
-    {
-        title: 'claude community kraków',
-        url: 'https://claudecommunity.pl',
-        linkedin: 'https://www.linkedin.com/company/claude-community-krakow/',
-        description: 'local meetups for engineers and makers building with claude',
-        role: 'live',
-    },
-]
-
-export default function Events() {
     return (
         <main>
-            <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-3 uppercase tracking-wider">events i organize</h1>
+            <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-3 uppercase tracking-wider">
+                {dict.events.heading}
+            </h1>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">
-                all my events live on{' '}
+                {dict.events.lumaBefore}
                 <Link
                     href="https://luma.com/user/mateusztylec"
                     target="_blank"
@@ -38,7 +19,7 @@ export default function Events() {
                     className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
                     data-plausible-event="luma_click"
                 >
-                    luma
+                    {dict.events.lumaLink}
                 </Link>
             </p>
             <div className="space-y-8">
@@ -55,10 +36,10 @@ export default function Events() {
                                 {event.title}
                             </Link>
                             <span className="text-xs px-2.5 py-1 rounded-full bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-400">
-                                {event.role}
+                                {event.badge}
                             </span>
                         </div>
-                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{event.description}</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{event.description[locale]}</p>
                         <div className="flex gap-5 items-center">
                             <Link
                                 href={event.url}
@@ -66,7 +47,7 @@ export default function Events() {
                                 rel="noopener noreferrer"
                                 className="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
                             >
-                                claudecommunity.pl
+                                {event.urlLabel}
                             </Link>
                             {event.linkedin && (
                                 <Link
