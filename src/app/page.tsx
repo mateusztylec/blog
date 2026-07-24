@@ -42,6 +42,30 @@ export default function Home() {
                 </div>
             </section>
 
+            <section className="mb-12 grid gap-4 sm:grid-cols-2">
+                <Link
+                    href="/projects"
+                    className="group border border-gray-100 dark:border-gray-800 rounded-lg p-5 hover:border-gray-200 dark:hover:border-gray-700 transition-colors"
+                >
+                    <div className="flex items-center justify-between mb-1">
+                        <h2 className="text-base font-normal">projects</h2>
+                        <i className="bi bi-arrow-right text-gray-400 dark:text-gray-500 group-hover:translate-x-0.5 transition-transform"></i>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">stuff i've built and shipped</p>
+                </Link>
+
+                <Link
+                    href="/events"
+                    className="group border border-gray-100 dark:border-gray-800 rounded-lg p-5 hover:border-gray-200 dark:hover:border-gray-700 transition-colors"
+                >
+                    <div className="flex items-center justify-between mb-1">
+                        <h2 className="text-base font-normal">events</h2>
+                        <i className="bi bi-arrow-right text-gray-400 dark:text-gray-500 group-hover:translate-x-0.5 transition-transform"></i>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">meetups i organize, like claude community kraków</p>
+                </Link>
+            </section>
+
             <section className="space-y-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
                     i build ai-powered products and the infrastructure they run on.
