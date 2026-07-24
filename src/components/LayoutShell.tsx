@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import { geistSans, geistMono } from '@/lib/fonts'
 import { Locale, getDictionary } from '@/lib/i18n'
 import Sidebar from '@/components/Sidebar'
+import LangSwitcher from '@/components/LangSwitcher'
 
 // One-time language detection for the static export: on the very first visit,
 // Polish browsers get redirected from the EN tree to /pl. Never redirects away
@@ -33,6 +34,9 @@ export default function LayoutShell({
                     <Sidebar locale={locale} labels={dict.nav} />
                     <div className="flex-1 min-w-0">{children}</div>
                 </div>
+                <footer className="max-w-3xl mx-auto px-6 pb-8 flex justify-end">
+                    <LangSwitcher locale={locale} />
+                </footer>
             </body>
         </html>
     )
