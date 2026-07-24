@@ -39,19 +39,19 @@
         "heading": "współpraca",
         "metaTitle": "współpraca",
         "metaDescription": "Szkolenia AI, wdrożenia AI i narzędzi AI w Krakowie, budowanie produktów. Współpraca z Mateuszem Tylcem.",
-        "intro": "pomagam firmom wdrażać ai. kraków i zdalnie.",
+        "intro": "pomagam firmom wdrażać ai w praktyce: szkolenia, wdrożenia i budowanie produktów. działam w krakowie, z zespołami pracuję też zdalnie.",
         "services": {
             "training": {
                 "title": "szkolenia ai",
-                "description": "praktyczne warsztaty ai dla zespołów"
+                "description": "praktyczne warsztaty dla zespołów, które chcą naprawdę używać ai w pracy, a nie tylko o nim gadać. przechodzimy przez realne przypadki z twojej firmy, narzędzia takie jak claude i chatgpt, prompting, automatyzacje i zasady bezpiecznego korzystania. formaty od kilkugodzinnego intro po pełny program wdrożeniowy dla całego zespołu."
             },
             "implementation": {
                 "title": "wdrożenia ai",
-                "description": "wdrażam ai i narzędzia ai w twojej firmie"
+                "description": "wdrażam ai w firmach od a do z: od znalezienia procesów, które warto zautomatyzować, przez dobór narzędzi i integracje, po rollout i mierzenie efektów. obieg dokumentów, wewnętrzni asystenci, obsługa klienta, integracje z systemami, których już używasz."
             },
             "projects": {
-                "title": "projekty",
-                "description": "buduję mvp i produkty oparte na ai"
+                "title": "projekty i mvp",
+                "description": "projektuję i buduję produkty oparte na ai: mvp, prototypy i narzędzia wewnętrzne. pełny zakres, od backendu i infrastruktury po działający interfejs. dostajesz produkt gotowy do wypuszczenia, nie demo."
             }
         },
         "cta": {

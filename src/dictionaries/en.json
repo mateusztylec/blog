@@ -39,19 +39,19 @@
         "heading": "work with me",
         "metaTitle": "work with me",
         "metaDescription": "AI trainings, AI implementations and product development in Kraków. Work with Mateusz Tylec.",
-        "intro": "i help companies adopt ai. based in kraków, working remotely too.",
+        "intro": "i help companies adopt ai in a practical way: trainings, implementations and building products. based in kraków, working with teams remotely too.",
         "services": {
             "training": {
                 "title": "ai trainings",
-                "description": "hands-on ai workshops for teams"
+                "description": "hands-on workshops for teams that want to actually use ai at work, not just talk about it. we go through real use cases from your company, tools like claude and chatgpt, prompting, automations and safe usage rules. formats range from a few hours of intro to a full onboarding program for the whole team."
             },
             "implementation": {
                 "title": "ai implementations",
-                "description": "bringing ai and ai tools into your company"
+                "description": "i implement ai in companies end to end: from finding the processes worth automating, through picking the tools and integrations, to rollout and measuring the results. document workflows, internal assistants, customer support, integrations with the systems you already use."
             },
             "projects": {
                 "title": "product development",
-                "description": "building mvps and ai-powered products"
+                "description": "i design and build ai-powered products: mvps, prototypes and internal tools. full scope, from backend and infrastructure to a working interface. you get a product ready to ship, not a demo."
             }
         },
         "cta": {

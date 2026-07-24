@@ -37,19 +37,19 @@ export default function WorkPage({ locale }: { locale: Locale }) {
             <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-3 uppercase tracking-wider">
                 {work.heading}
             </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">{work.intro}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">{work.intro}</p>
 
-            <div className="space-y-8">
+            <div className="divide-y divide-gray-100 dark:divide-gray-800">
                 {serviceKeys.map((key) => (
-                    <div key={key}>
-                        <h2 className="text-lg font-normal mb-1">{work.services[key].title}</h2>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">{work.services[key].description}</p>
+                    <div key={key} className="py-8">
+                        <h2 className="text-lg font-normal mb-2">{work.services[key].title}</h2>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{work.services[key].description}</p>
                     </div>
                 ))}
             </div>
 
-            <section className="mt-16">
-                <h2 className="text-lg font-normal mb-1">{work.cta.title}</h2>
+            <section className="border-t border-gray-100 dark:border-gray-800 pt-8">
+                <h2 className="text-lg font-normal mb-2">{work.cta.title}</h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">{work.cta.text}</p>
                 <Link
                     href={`mailto:${CONTACT_EMAIL}`}
