@@ -45,14 +45,14 @@ export default function Home() {
             <section className="space-y-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
                     i build ai-powered products and the infrastructure they run on.
-                    most of my time goes into shipping side projects — some live, most failed,
+                    most of my time goes into shipping side projects. some live, most failed,
                     all of them lessons. you can find them in{' '}
                     <Link href="/projects" className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
                         projects
                     </Link>.
                 </p>
                 <p>
-                    outside of building, i organize local tech events — like{' '}
+                    outside of building, i organize local tech events, like{' '}
                     <Link
                         href="https://claudecommunity.pl"
                         target="_blank"
