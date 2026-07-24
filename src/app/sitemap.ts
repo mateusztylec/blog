@@ -20,5 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...entries('/', 1, 0.9),
         ...entries('/projects', 0.8, 0.7),
         ...entries('/events', 0.8, 0.7),
+        ...entries('/work', 0.8, 0.7),
     ]
 }

@@ -2,7 +2,8 @@
     "nav": {
         "about": "about me",
         "projects": "projects",
-        "events": "events"
+        "events": "events",
+        "work": "work with me"
     },
     "home": {
         "greeting": "hi, i'm mateusz 👋🏼",
@@ -33,5 +34,27 @@
         "lumaLink": "luma",
         "metaTitle": "events",
         "metaDescription": "Tech events organized by Mateusz Tylec, including Claude Community Kraków."
+    },
+    "work": {
+        "heading": "work with me",
+        "metaTitle": "work with me",
+        "metaDescription": "AI trainings, AI implementations and product development in Kraków. Work with Mateusz Tylec.",
+        "intro": "i help companies adopt ai. based in kraków, working remotely too.",
+        "services": {
+            "training": {
+                "title": "ai trainings",
+                "description": "hands-on ai workshops for teams"
+            },
+            "implementation": {
+                "title": "ai implementations",
+                "description": "bringing ai and ai tools into your company"
+            },
+            "projects": {
+                "title": "product development",
+                "description": "building mvps and ai-powered products"
+            }
+        },
+        "contactBefore": "sounds interesting? tell me what you need at ",
+        "contactAfter": "."
     }
 }

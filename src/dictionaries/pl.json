@@ -2,7 +2,8 @@
     "nav": {
         "about": "o mnie",
         "projects": "projekty",
-        "events": "eventy"
+        "events": "eventy",
+        "work": "współpraca"
     },
     "home": {
         "greeting": "cześć, jestem mateusz 👋🏼",
@@ -33,5 +34,27 @@
         "lumaLink": "lumie",
         "metaTitle": "eventy",
         "metaDescription": "Eventy technologiczne organizowane przez Mateusza Tylca, m.in. Claude Community Kraków."
+    },
+    "work": {
+        "heading": "współpraca",
+        "metaTitle": "współpraca",
+        "metaDescription": "Szkolenia AI, wdrożenia AI i narzędzi AI w Krakowie, budowanie produktów. Współpraca z Mateuszem Tylcem.",
+        "intro": "pomagam firmom wdrażać ai. kraków i zdalnie.",
+        "services": {
+            "training": {
+                "title": "szkolenia ai",
+                "description": "praktyczne warsztaty ai dla zespołów"
+            },
+            "implementation": {
+                "title": "wdrożenia ai",
+                "description": "wdrażam ai i narzędzia ai w twojej firmie"
+            },
+            "projects": {
+                "title": "projekty",
+                "description": "buduję mvp i produkty oparte na ai"
+            }
+        },
+        "contactBefore": "brzmi ciekawie? napisz, czego potrzebujesz, na ",
+        "contactAfter": "."
     }
 }

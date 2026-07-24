@@ -24,6 +24,7 @@ export default function Sidebar({
         { href: '/', label: labels.about },
         { href: '/projects', label: labels.projects },
         { href: '/events', label: labels.events },
+        { href: '/work', label: labels.work },
     ]
 
     return (
