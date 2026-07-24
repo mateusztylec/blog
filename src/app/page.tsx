@@ -52,16 +52,7 @@ export default function Home() {
                     </Link>.
                 </p>
                 <p>
-                    outside of building, i organize local tech events, like{' '}
-                    <Link
-                        href="https://claudecommunity.pl"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
-                    >
-                        claude community kraków
-                    </Link>
-                    . more in{' '}
+                    outside of building, i organize local tech events. more in{' '}
                     <Link href="/events" className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
                         events
                     </Link>.
