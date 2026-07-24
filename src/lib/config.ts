@@ -1,9 +1,9 @@
 import { ConfigProps } from "@/types/config";
 
 const config = {
-  appName: "Mateusz Portfolio",
+  appName: "Mateusz Tylec",
   appDescription:
-    "Personal portfolio website of Mateusz Tylec.",
+    "AI developer and indie hacker building AI-powered products. Organizer of Claude Community Kraków.",
   domainName: "mateusztylec.com",
   rootDomain: "mateusztylec.com",
 } as ConfigProps;

@@ -71,37 +71,26 @@ export const getSEOTags = ({
   };
 };
 
-// Strctured Data for Rich Results on Google. Learn more: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
-// Find your type here (SoftwareApp, Book...): https://developers.google.com/search/docs/appearance/structured-data/search-gallery
-// Use this tool to check data is well structure: https://search.google.com/test/rich-results
-// You don't have to use this component, but it increase your chances of having a rich snippet on Google.
-// I recommend this one below to your /page.js for software apps: It tells Google your AppName is a Software, and it has a rating of 4.8/5 from 12 reviews.
-// Fill the fields with your own data
-// See https://shipfa.st/docs/features/seo
+// Structured data for rich results on Google. Rendered on the home page.
+// Validate with https://search.google.com/test/rich-results
 export const renderSchemaTags = () => {
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
-          "@context": "http://schema.org",
-          "@type": "SoftwareApplication",
-          name: config.appName,
-          description: config.appDescription,
-          image: `https://${config.domainName}/icon.png`,
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Mateusz Tylec",
           url: `https://${config.domainName}/`,
-          author: {
-            "@type": "Person",
-            name: "Mateusz Tylec",
-          },
-          datePublished: "2025-05-15",
-          applicationCategory: "Business",
-          operatingSystem: "WebApplication",
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.8",
-            ratingCount: "12",
-          },
+          jobTitle: "AI Developer",
+          description: config.appDescription,
+          sameAs: [
+            "https://twitter.com/mateusztylec",
+            "https://github.com/mateusztylec",
+            "https://linkedin.com/in/mateusztylec",
+            "https://luma.com/user/mateusztylec",
+          ],
         }),
       }}
     ></script>
