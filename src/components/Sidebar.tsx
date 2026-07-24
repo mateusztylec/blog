@@ -13,7 +13,7 @@ export default function Sidebar() {
     const pathname = usePathname()
 
     return (
-        <nav className="mb-12 md:mb-0 md:w-36 shrink-0">
+        <nav className="mb-12 md:mb-0 md:w-36 shrink-0 md:sticky md:top-24 md:self-start">
             <ul className="flex gap-6 md:flex-col md:gap-4">
                 {tabs.map((tab) => {
                     const active = pathname === tab.href || pathname === `${tab.href}/`
