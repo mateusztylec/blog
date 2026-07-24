@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { getSEOTags } from '@/lib/seo'
 
 export const metadata = getSEOTags({
-    title: 'events',
+    title: 'Events | Mateusz Tylec',
     description: 'Tech events organized by Mateusz Tylec, including Claude Community Kraków.',
     canonicalUrlRelative: '/events',
 })

@@ -17,15 +17,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
-  ...getSEOTags({
-    canonicalUrlRelative: "/",
-  }),
-  title: {
-    default: "Mateusz Tylec | ai dev & indie hacker",
-    template: "%s | Mateusz Tylec",
-  },
-};
+export const metadata = getSEOTags({
+  title: "Mateusz Portfolio",
+  description: "Personal portfolio website of Mateusz Tylec.",
+  canonicalUrlRelative: "/",
+});
 
 export default function RootLayout({
   children,
