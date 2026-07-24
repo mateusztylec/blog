@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "about": "about me",
+        "projects": "projects",
+        "events": "events",
+        "work": "work with me"
+    },
+    "home": {
+        "greeting": "hi, i'm mateusz 👋🏼",
+        "tagline": "ai dev • indie hacker • builder • devops",
+        "bioProjects": {
+            "before": "i build ai-powered products and the infrastructure they run on. most of my time goes into shipping side projects. some live, most failed, all of them lessons. you can find them in ",
+            "link": "projects",
+            "after": "."
+        },
+        "bioEvents": {
+            "before": "outside of building, i organize local tech events. more in ",
+            "link": "events",
+            "after": "."
+        },
+        "cards": {
+            "projects": "stuff i've built and shipped",
+            "events": "meetups i organize"
+        }
+    },
+    "projects": {
+        "heading": "projects",
+        "metaTitle": "projects",
+        "metaDescription": "AI-powered products and side projects built by Mateusz Tylec."
+    },
+    "events": {
+        "heading": "events i organize",
+        "lumaBefore": "all my events live on ",
+        "lumaLink": "luma",
+        "metaTitle": "events",
+        "metaDescription": "Tech events organized by Mateusz Tylec, including Claude Community Kraków."
+    },
+    "work": {
+        "heading": "work with me",
+        "metaTitle": "work with me",
+        "metaDescription": "AI trainings, AI implementations and product development in Kraków. Work with Mateusz Tylec.",
+        "intro": "i help companies adopt ai in a practical way: trainings, implementations and building products. based in kraków, working with teams remotely too.",
+        "services": {
+            "training": {
+                "title": "ai trainings",
+                "description": "hands-on workshops for teams that want to actually use ai at work, not just talk about it. we go through real use cases from your company, tools like claude and chatgpt, prompting, automations and safe usage rules. formats range from a few hours of intro to a full onboarding program for the whole team."
+            },
+            "implementation": {
+                "title": "ai implementations",
+                "description": "i implement ai in companies end to end: from finding the processes worth automating, through picking the tools and integrations, to rollout and measuring the results. document workflows, internal assistants, customer support, integrations with the systems you already use."
+            },
+            "projects": {
+                "title": "product development",
+                "description": "i design and build ai-powered products: mvps, prototypes and internal tools. full scope, from backend and infrastructure to a working interface. you get a product ready to ship, not a demo."
+            }
+        },
+        "cta": {
+            "title": "let's talk",
+            "text": "tell me what you need. i reply to every message.",
+            "button": "write to me"
+        }
+    }
+}

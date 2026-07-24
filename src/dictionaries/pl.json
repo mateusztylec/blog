@@ -1,0 +1,63 @@
+{
+    "nav": {
+        "about": "o mnie",
+        "projects": "projekty",
+        "events": "eventy",
+        "work": "współpraca"
+    },
+    "home": {
+        "greeting": "cześć, jestem mateusz 👋🏼",
+        "tagline": "ai dev • indie hacker • builder • devops",
+        "bioProjects": {
+            "before": "buduję produkty oparte na ai i infrastrukturę, na której działają. większość czasu schodzi mi na side projecty. część żyje, większość poległa, wszystkie czegoś nauczyły. znajdziesz je w ",
+            "link": "projektach",
+            "after": "."
+        },
+        "bioEvents": {
+            "before": "poza budowaniem organizuję lokalne eventy techniczne. więcej w ",
+            "link": "eventach",
+            "after": "."
+        },
+        "cards": {
+            "projects": "rzeczy, które zbudowałem i wypuściłem",
+            "events": "meetupy, które organizuję"
+        }
+    },
+    "projects": {
+        "heading": "projekty",
+        "metaTitle": "projekty",
+        "metaDescription": "Produkty oparte na AI i side projecty budowane przez Mateusza Tylca."
+    },
+    "events": {
+        "heading": "eventy, które organizuję",
+        "lumaBefore": "wszystkie moje eventy znajdziesz na ",
+        "lumaLink": "lumie",
+        "metaTitle": "eventy",
+        "metaDescription": "Eventy technologiczne organizowane przez Mateusza Tylca, m.in. Claude Community Kraków."
+    },
+    "work": {
+        "heading": "współpraca",
+        "metaTitle": "współpraca",
+        "metaDescription": "Szkolenia AI, wdrożenia AI i narzędzi AI w Krakowie, budowanie produktów. Współpraca z Mateuszem Tylcem.",
+        "intro": "pomagam firmom wdrażać ai w praktyce: szkolenia, wdrożenia i budowanie produktów. działam w krakowie, z zespołami pracuję też zdalnie.",
+        "services": {
+            "training": {
+                "title": "szkolenia ai",
+                "description": "praktyczne warsztaty dla zespołów, które chcą naprawdę używać ai w pracy, a nie tylko o nim gadać. przechodzimy przez realne przypadki z twojej firmy, narzędzia takie jak claude i chatgpt, prompting, automatyzacje i zasady bezpiecznego korzystania. formaty od kilkugodzinnego intro po pełny program wdrożeniowy dla całego zespołu."
+            },
+            "implementation": {
+                "title": "wdrożenia ai",
+                "description": "wdrażam ai w firmach od a do z: od znalezienia procesów, które warto zautomatyzować, przez dobór narzędzi i integracje, po rollout i mierzenie efektów. obieg dokumentów, wewnętrzni asystenci, obsługa klienta, integracje z systemami, których już używasz."
+            },
+            "projects": {
+                "title": "projekty i mvp",
+                "description": "projektuję i buduję produkty oparte na ai: mvp, prototypy i narzędzia wewnętrzne. pełny zakres, od backendu i infrastruktury po działający interfejs. dostajesz produkt gotowy do wypuszczenia, nie demo."
+            }
+        },
+        "cta": {
+            "title": "pogadajmy",
+            "text": "napisz, czego potrzebujesz. odpisuję na każdą wiadomość.",
+            "button": "napisz do mnie"
+        }
+    }
+}
