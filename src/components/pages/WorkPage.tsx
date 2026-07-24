@@ -41,19 +41,19 @@ export default function WorkPage({ locale }: { locale: Locale }) {
 
             <div className="space-y-8">
                 {serviceKeys.map((key) => (
-                    <div key={key} className="border border-gray-100 dark:border-gray-800 rounded-lg p-6">
-                        <h2 className="text-lg font-normal mb-2">{work.services[key].title}</h2>
+                    <div key={key}>
+                        <h2 className="text-lg font-normal mb-1">{work.services[key].title}</h2>
                         <p className="text-sm text-gray-500 dark:text-gray-400">{work.services[key].description}</p>
                     </div>
                 ))}
             </div>
 
-            <section className="mt-12 rounded-lg bg-gray-900 dark:bg-gray-100 p-8 text-center">
-                <h2 className="text-xl font-normal text-white dark:text-gray-900 mb-2">{work.cta.title}</h2>
-                <p className="text-sm text-gray-400 dark:text-gray-600 mb-6">{work.cta.text}</p>
+            <section className="mt-16">
+                <h2 className="text-lg font-normal mb-1">{work.cta.title}</h2>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">{work.cta.text}</p>
                 <Link
                     href={`mailto:${CONTACT_EMAIL}`}
-                    className="inline-block rounded-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-sm px-6 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+                    className="inline-block rounded-full border border-gray-300 dark:border-gray-700 text-sm px-5 py-2.5 hover:border-gray-500 dark:hover:border-gray-400 transition-colors"
                     data-plausible-event="contact_email_click"
                 >
                     {work.cta.button} → {CONTACT_EMAIL}
