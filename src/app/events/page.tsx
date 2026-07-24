@@ -21,7 +21,7 @@ const events: Event[] = [
         url: 'https://claudecommunity.pl',
         linkedin: 'https://www.linkedin.com/company/claude-community-krakow/',
         description: 'local meetups for engineers and makers building with claude',
-        role: 'organizer',
+        role: 'live',
     },
 ]
 
