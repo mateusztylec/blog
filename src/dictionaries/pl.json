@@ -54,7 +54,10 @@
                 "description": "buduję mvp i produkty oparte na ai"
             }
         },
-        "contactBefore": "brzmi ciekawie? napisz, czego potrzebujesz, na ",
-        "contactAfter": "."
+        "cta": {
+            "title": "pogadajmy",
+            "text": "napisz, czego potrzebujesz. odpisuję na każdą wiadomość.",
+            "button": "napisz do mnie"
+        }
     }
 }

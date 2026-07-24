@@ -54,7 +54,10 @@
                 "description": "building mvps and ai-powered products"
             }
         },
-        "contactBefore": "sounds interesting? tell me what you need at ",
-        "contactAfter": "."
+        "cta": {
+            "title": "let's talk",
+            "text": "tell me what you need. i reply to every message.",
+            "button": "write to me"
+        }
     }
 }

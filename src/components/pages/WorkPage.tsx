@@ -48,17 +48,17 @@ export default function WorkPage({ locale }: { locale: Locale }) {
                 ))}
             </div>
 
-            <p className="mt-12 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                {work.contactBefore}
+            <section className="mt-12 rounded-lg bg-gray-900 dark:bg-gray-100 p-8 text-center">
+                <h2 className="text-xl font-normal text-white dark:text-gray-900 mb-2">{work.cta.title}</h2>
+                <p className="text-sm text-gray-400 dark:text-gray-600 mb-6">{work.cta.text}</p>
                 <Link
                     href={`mailto:${CONTACT_EMAIL}`}
-                    className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+                    className="inline-block rounded-full bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-sm px-6 py-3 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
                     data-plausible-event="contact_email_click"
                 >
-                    {CONTACT_EMAIL}
+                    {work.cta.button} → {CONTACT_EMAIL}
                 </Link>
-                {work.contactAfter}
-            </p>
+            </section>
         </main>
     )
 }
