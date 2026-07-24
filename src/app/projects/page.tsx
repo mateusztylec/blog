@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { getSEOTags } from '@/lib/seo'
 
 export const metadata = getSEOTags({
-    title: 'Projects | Mateusz Tylec',
-    description: 'Projects built by Mateusz Tylec.',
+    title: 'projects',
+    description: 'AI-powered products and side projects built by Mateusz Tylec.',
     canonicalUrlRelative: '/projects',
 })
 
@@ -96,7 +96,7 @@ const StatusBadge = ({ status }: { status: Project['status'] }) => {
 export default function Projects() {
     return (
         <main>
-            <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-8 uppercase tracking-wider">my stuff</h1>
+            <h1 className="text-sm font-normal text-gray-400 dark:text-gray-500 mb-8 uppercase tracking-wider">projects</h1>
             <div className="space-y-8">
                 {projects.map((project) => (
                     project.url ? (

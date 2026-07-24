@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import { renderSchemaTags } from '@/lib/seo'
 
 export default function Home() {
     return (
         <main>
+            {renderSchemaTags()}
             <section className="mb-12">
                 <h1 className="text-3xl font-normal mb-3">hi, i'm mateusz 👋🏼</h1>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
