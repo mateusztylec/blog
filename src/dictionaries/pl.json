@@ -1,0 +1,37 @@
+{
+    "nav": {
+        "about": "o mnie",
+        "projects": "projekty",
+        "events": "eventy"
+    },
+    "home": {
+        "greeting": "cześć, jestem mateusz 👋🏼",
+        "tagline": "ai dev • indie hacker • builder • devops",
+        "bioProjects": {
+            "before": "buduję produkty oparte na ai i infrastrukturę, na której działają. większość czasu schodzi mi na side projecty. część żyje, większość poległa, wszystkie czegoś nauczyły. znajdziesz je w ",
+            "link": "projektach",
+            "after": "."
+        },
+        "bioEvents": {
+            "before": "poza budowaniem organizuję lokalne eventy techniczne. więcej w ",
+            "link": "eventach",
+            "after": "."
+        },
+        "cards": {
+            "projects": "rzeczy, które zbudowałem i wypuściłem",
+            "events": "meetupy, które organizuję"
+        }
+    },
+    "projects": {
+        "heading": "projekty",
+        "metaTitle": "projekty",
+        "metaDescription": "Produkty oparte na AI i side projecty budowane przez Mateusza Tylca."
+    },
+    "events": {
+        "heading": "eventy, które organizuję",
+        "lumaBefore": "wszystkie moje eventy znajdziesz na ",
+        "lumaLink": "lumie",
+        "metaTitle": "eventy",
+        "metaDescription": "Eventy technologiczne organizowane przez Mateusza Tylca, m.in. Claude Community Kraków."
+    }
+}

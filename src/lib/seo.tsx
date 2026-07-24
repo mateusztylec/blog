@@ -12,9 +12,14 @@ export const getSEOTags = ({
   keywords,
   openGraph,
   canonicalUrlRelative,
+  languages,
+  ogLocale,
   extraTags,
 }: Metadata & {
   canonicalUrlRelative?: string;
+  // hreflang map of relative URLs, e.g. { en: "/projects", pl: "/pl/projects", "x-default": "/projects" }
+  languages?: Record<string, string>;
+  ogLocale?: string;
   extraTags?: Record<string, any>;
 } = {}) => {
   const metadataBase = new URL(
@@ -47,7 +52,7 @@ export const getSEOTags = ({
           height: 630,
         },
       ],
-      locale: "en_US",
+      locale: ogLocale || "en_US",
       type: "website",
     },
 
@@ -63,7 +68,10 @@ export const getSEOTags = ({
 
     // If a canonical URL is given, we add it. The metadataBase will turn the relative URL into a fully qualified URL
     ...(canonicalUrlRelative && {
-      alternates: { canonical: canonicalUrlRelative },
+      alternates: {
+        canonical: canonicalUrlRelative,
+        ...(languages && { languages }),
+      },
     }),
 
     // If you want to add extra tags, you can pass them here
