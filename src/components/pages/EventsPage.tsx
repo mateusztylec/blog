@@ -17,7 +17,7 @@ export default function EventsPage({ locale }: { locale: Locale }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline underline-offset-2 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
-                    data-plausible-event="luma_click"
+                    data-track="luma_click"
                 >
                     {dict.events.lumaLink}
                 </Link>
@@ -31,7 +31,8 @@ export default function EventsPage({ locale }: { locale: Locale }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-lg font-normal hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                                data-plausible-event="claude_community_click"
+                                data-track="event_click"
+                                data-name={event.title}
                             >
                                 {event.title}
                             </Link>
@@ -46,6 +47,8 @@ export default function EventsPage({ locale }: { locale: Locale }) {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+                                data-track="event_click"
+                                data-name={event.title}
                             >
                                 {event.urlLabel}
                             </Link>
@@ -55,6 +58,8 @@ export default function EventsPage({ locale }: { locale: Locale }) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-400 dark:text-gray-500 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+                                    data-track="event_linkedin_click"
+                                    data-name={event.title}
                                 >
                                     <i className="bi bi-linkedin"></i>
                                 </Link>

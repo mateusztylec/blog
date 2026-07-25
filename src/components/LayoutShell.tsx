@@ -1,5 +1,7 @@
 import '@/app/globals.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { OpenPanelComponent } from '@openpanel/nextjs'
+import { env } from '@/env'
 import { geistSans, geistMono } from '@/lib/fonts'
 import { Locale, getDictionary } from '@/lib/i18n'
 import Sidebar from '@/components/Sidebar'
@@ -22,14 +24,18 @@ export default function LayoutShell({
     return (
         <html lang={locale}>
             <head>
-                <script
-                    defer
-                    data-domain="mateusztylec.com"
-                    src="https://plausible-prod.matsurge.com/js/script.js"
-                ></script>
                 <script dangerouslySetInnerHTML={{ __html: detectLanguageSnippet }}></script>
             </head>
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                {env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID && (
+                    <OpenPanelComponent
+                        clientId={env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID}
+                        apiUrl="https://openpanel-api.mateusztylec.com"
+                        trackScreenViews={true}
+                        trackOutgoingLinks={true}
+                        trackAttributes={true}
+                    />
+                )}
                 <div className="max-w-3xl mx-auto px-6 py-16 md:py-24 md:flex md:gap-12">
                     <Sidebar locale={locale} labels={dict.nav} />
                     <div className="flex-1 min-w-0">{children}</div>

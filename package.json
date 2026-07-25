@@ -10,11 +10,13 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@openpanel/nextjs": "^1.5.1",
+        "@t3-oss/env-nextjs": "^0.13.11",
         "bootstrap-icons": "^1.13.1",
         "next": "^16.2.11",
-        "next-plausible": "^4.0.0",
         "react": "^19.2.8",
-        "react-dom": "^19.2.8"
+        "react-dom": "^19.2.8",
+        "zod": "^4.4.3"
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4.3.3",

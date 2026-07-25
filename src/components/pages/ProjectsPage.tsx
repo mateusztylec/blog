@@ -39,6 +39,8 @@ export default function ProjectsPage({ locale }: { locale: Locale }) {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="block group relative"
+                            data-track="project_click"
+                            data-name={project.title}
                         >
                             <ProjectCard project={project} locale={locale} />
                         </Link>
