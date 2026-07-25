@@ -32,7 +32,6 @@ export default function LayoutShell({
                         clientId={env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID}
                         apiUrl="https://openpanel-api.mateusztylec.com"
                         trackScreenViews={true}
-                        trackOutgoingLinks={true}
                         trackAttributes={true}
                     />
                 )}
