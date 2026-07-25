@@ -24,11 +24,6 @@ export default function LayoutShell({
     return (
         <html lang={locale}>
             <head>
-                <script
-                    defer
-                    data-domain="mateusztylec.com"
-                    src="https://plausible-prod.matsurge.com/js/script.js"
-                ></script>
                 <script dangerouslySetInnerHTML={{ __html: detectLanguageSnippet }}></script>
             </head>
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
