@@ -54,7 +54,7 @@ export default function WorkPage({ locale }: { locale: Locale }) {
                 <Link
                     href={`mailto:${CONTACT_EMAIL}`}
                     className="inline-block rounded-full border border-gray-300 dark:border-gray-700 text-sm px-5 py-2.5 hover:border-gray-500 dark:hover:border-gray-400 transition-colors"
-                    data-plausible-event="contact_email_click"
+                    data-track="contact_email_click"
                 >
                     {work.cta.button} → {CONTACT_EMAIL}
                 </Link>

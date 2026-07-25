@@ -3,9 +3,9 @@ import { Locale, getDictionary, localePath } from '@/lib/i18n'
 import { renderSchemaTags } from '@/lib/seo'
 
 const socials = [
-    { href: 'https://twitter.com/mateusztylec', icon: 'bi-twitter-x', event: 'twitter_click' },
-    { href: 'https://github.com/mateusztylec', icon: 'bi-github', event: 'github_click' },
-    { href: 'https://linkedin.com/in/mateusztylec', icon: 'bi-linkedin', event: 'linkedin_click' },
+    { href: 'https://twitter.com/mateusztylec', icon: 'bi-twitter-x', channel: 'twitter' },
+    { href: 'https://github.com/mateusztylec', icon: 'bi-github', channel: 'github' },
+    { href: 'https://linkedin.com/in/mateusztylec', icon: 'bi-linkedin', channel: 'linkedin' },
 ]
 
 export default function HomePage({ locale }: { locale: Locale }) {
@@ -27,7 +27,8 @@ export default function HomePage({ locale }: { locale: Locale }) {
                             className="text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all"
                             target="_blank"
                             rel="noopener noreferrer"
-                            data-plausible-event={social.event}
+                            data-track="social_click"
+                            data-channel={social.channel}
                         >
                             <i className={`bi ${social.icon} text-lg`}></i>
                         </Link>
