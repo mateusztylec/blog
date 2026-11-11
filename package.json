@@ -1,30 +1,40 @@
 {
-    "name": "blog",
-    "version": "0.1.0",
-    "private": true,
-    "packageManager": "bun@1.4.4",
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "@openpanel/nextjs": "^1.5.4",
-        "@t3-oss/env-nextjs": "^0.13.11",
-        "bootstrap-icons": "^1.13.2",
-        "next": "^16.4.6",
-        "react": "^19.3.1",
-        "react-dom": "^19.3.1",
-        "zod": "^4.6.7"
-    },
-    "devDependencies": {
-        "@tailwindcss/postcss": "^4.3.5",
-        "@types/node": "^26.6.6",
-        "@types/react": "^19.3.0",
-        "@types/react-dom": "^19.3.0",
-        "postcss": "^8.5.32",
-        "tailwindcss": "^4.3.5",
-        "typescript": "^7.0.2"
-    }
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "oxlint --type-aware",
+    "format": "oxfmt",
+    "check": "oxfmt && oxlint --type-aware",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tools/oxlint-plugin",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@openpanel/nextjs": "^1.5.4",
+    "@t3-oss/env-nextjs": "^0.13.11",
+    "bootstrap-icons": "^1.13.2",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@oxlint/plugins": "1.92.0",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/bun": "1.4.4",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "oxfmt": "0.76.0",
+    "oxlint": "1.92.0",
+    "oxlint-tsgolint": "7.0.2006",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2"
+  }
 }

@@ -1,11 +1,9 @@
-import { ConfigProps } from "@/types/config";
+import type { ConfigProps } from "@/types/config";
 
-const config = {
+export const config: ConfigProps = {
   appName: "Mateusz Tylec",
   appDescription:
     "AI developer and indie hacker building AI-powered products. Organizer of Claude Community Kraków.",
   domainName: "mateusztylec.com",
   rootDomain: "mateusztylec.com",
-} as ConfigProps;
-
-export default config;
+};

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import config from "@/lib/config";
+import { config } from "@/lib/config";
 
 // These are all the SEO tags you can add to your pages.
 // It prefills data with default title/description/OG, etc.. and you can cusotmize it for each page.
@@ -20,12 +20,12 @@ export const getSEOTags = ({
   // hreflang map of relative URLs, e.g. { en: "/projects", pl: "/pl/projects", "x-default": "/projects" }
   languages?: Record<string, string>;
   ogLocale?: string;
-  extraTags?: Record<string, any>;
+  extraTags?: Record<string, unknown>;
 } = {}) => {
   const metadataBase = new URL(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/"
-      : `https://${config.domainName}/`
+      : `https://${config.domainName}/`,
   );
 
   return {
